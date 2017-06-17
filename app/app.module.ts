@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent }  from './app.component';
 import { MariaComponent } from './maria.component';
 import { ProductListComponent } from './products/product-list.component';
+import { OrdersListComponent } from './orders/orders-list.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { ProductListComponent } from './products/product-list.component';
   declarations: [
     AppComponent,
     MariaComponent,
-    ProductListComponent
+    ProductListComponent,
+    OrdersListComponent
   ],
   bootstrap: [ AppComponent ]
 })

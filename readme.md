@@ -8,4 +8,4 @@
     It also starts the lite-server and launches the browser to run the application.
 
 
-Changes so far: Added Orders page, but not set to load upon starting app yet.
+Changes so far: Orders page displayed, not showing objects yet
