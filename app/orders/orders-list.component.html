@@ -23,22 +23,24 @@
                                
                            </button>
                        </th>
-                       <th>Product</th>
+                       <th>Order Id</th>
                        
-                       <th>Code</th>
-                       <th>Available</th>
-                       <th>Price</th>
-                       <th>5 Star Rating</th>
+                       <th>Item Name</th>
+                       <th>Model #</th>
+                       <th>Number Ordered</th>
+                       <th>Customer Name</th>
+                       <th>Date of Purchase</th>
+                       <th>Total Price</th>
                    </tr>
                </thead>
                <tbody>
-                  <tr *ngFor='let product of products'>
+                  <tr *ngFor='let order of orders'>
                     <td></td>
-                    <td>{{product.productName}}</td>
-                    <td>{{product.productCode}}</td>
-                    <td>{{product.releaseDate}}</td>
-                    <td>{{product.price|currency:'USD':'1.2-2'}}</td>
-                    <td>{{product.starRating}}</td>
+                    <td>{{order.productName}}</td>
+                    <td>{{order.productCode}}</td>
+                    <td>{{order.releaseDate}}</td>
+                    <td>{{order.price|currency:'USD':'1.2-2'}}</td>
+                    <td>{{order.starRating}}</td>
                   </tr>
                </tbody>
            </table>
