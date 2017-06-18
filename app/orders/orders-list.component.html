@@ -36,11 +36,13 @@
                <tbody>
                   <tr *ngFor='let order of orders'>
                     <td></td>
-                    <td>{{order.productName}}</td>
-                    <td>{{order.productCode}}</td>
-                    <td>{{order.releaseDate}}</td>
-                    <td>{{order.price|currency:'USD':'1.2-2'}}</td>
-                    <td>{{order.starRating}}</td>
+                    <td>{{order.orderId}}</td>
+                    <td>{{order.itemName}}</td>
+                    <td>{{order.model}}</td>
+                    <td>{{order.numberOrdered}}</td>
+                    <td>{{order.customerName}}</td>
+                    <td>{{order.date}}</td>
+                    <td>{{order.totalPrice|currency:'USD':'1.2-2'}}</td>
                   </tr>
                </tbody>
            </table>
