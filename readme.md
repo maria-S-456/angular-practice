@@ -8,4 +8,4 @@
     It also starts the lite-server and launches the browser to run the application.
 
 
-Changes so far: Orders component created and working.
+Changes so far: Toggle image for product list, with orders list on same page
