@@ -6,6 +6,7 @@ import { AppComponent }  from './app.component';
 import { MariaComponent } from './maria.component';
 import { ProductListComponent } from './products/product-list.component';
 import { OrdersListComponent } from './orders/orders-list.component';
+import { ProductFilterPipe } from './products/product-filter.pipe';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { OrdersListComponent } from './orders/orders-list.component';
     AppComponent,
     MariaComponent,
     ProductListComponent,
-    OrdersListComponent
+    OrdersListComponent,
+    ProductFilterPipe
   ],
   bootstrap: [ AppComponent ]
 })
