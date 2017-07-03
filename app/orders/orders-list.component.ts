@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import { IOrders } from './orders';
 
 @Component({
 	selector: 'pm-orders',
-	templateUrl: 'app/orders/orders-list.component.html'
+    moduleId: module.id,
+	templateUrl: 'orders-list.component.html',
+    styleUrls: ['orders-list.component.css']
 })
 
 export class OrdersListComponent{
@@ -10,8 +13,8 @@ export class OrdersListComponent{
     imageWidth: number = 50;
     imageMargin: number = 2;
     showImage: boolean = false;
-	orders: any[] = [
-        {
+	orders: IOrders[] = [
+    {
         "orderId": 1,
         "itemName": "Greenwald's Fertilizer",
         "model":"42M88",
@@ -19,6 +22,7 @@ export class OrdersListComponent{
         "customerName": "John Harris",
         "date": "12/14/16",
         "totalPrice": 59.85,
+        "starRating": 4.0,
         "imageUrl":"http://4.bp.blogspot.com/-oK-MhzwiXns/TtXr0uYQXMI/AAAAAAAAB0U/VvZsuVOH9WM/s1600/Fertilizer.gif"
     },
     {
@@ -29,6 +33,7 @@ export class OrdersListComponent{
         "customerName": "Bridget Corey",
         "date": "12/28/16",
         "totalPrice": 89.99,
+        "starRating": 4.5,
         "imageUrl":"http://images.clipartpanda.com/lawn-mower-clip-art-as1031.gif"
     },
     {
@@ -39,6 +44,7 @@ export class OrdersListComponent{
         "customerName": "Ethan S. Cooper",
         "date": "01/02/17",
         "totalPrice": 59.90,
+        "starRating": 3.5,
         "imageUrl":"http://www.homedepot.com/catalog/productImages/1000/93/931c4e27-581e-4550-87ac-8ef3f4c80e70_1000.jpg"
     },
     {
@@ -49,6 +55,7 @@ export class OrdersListComponent{
         "customerName": "Victor B. Lee",
         "date": "01/06/17",
         "totalPrice": 71.33,
+        "starRating": 5.0,
         "imageUrl":"https://previews.123rf.com/images/madozi/madozi1408/madozi140800011/30463951-wood-planks-isolated-illustration-on-white-background-Stock-Vector.jpg"
     },
     {
@@ -59,6 +66,7 @@ export class OrdersListComponent{
         "customerName": "Bill Groban",
         "date": "01/22/17",
         "totalPrice": 41.95,
+        "starRating": 4.8,
         "imageUrl":"https://cbpofarizonainc.com/wp-content/uploads/Red-paint-can.jpg"
     }
     ];

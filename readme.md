@@ -8,4 +8,4 @@
     It also starts the lite-server and launches the browser to run the application.
 
 
-Changes so far: Toggle image button for both products and orders
+Changes so far: Added filter for orders page based on item name

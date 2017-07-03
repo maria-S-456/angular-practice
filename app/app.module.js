@@ -14,6 +14,7 @@ var maria_component_1 = require("./maria.component");
 var product_list_component_1 = require("./products/product-list.component");
 var orders_list_component_1 = require("./orders/orders-list.component");
 var product_filter_pipe_1 = require("./products/product-filter.pipe");
+var orders_filter_pipe_1 = require("./orders/orders-filter.pipe");
 var star_component_1 = require("./shared/star.component");
 var AppModule = (function () {
     function AppModule() {
@@ -32,6 +33,7 @@ AppModule = __decorate([
             product_list_component_1.ProductListComponent,
             orders_list_component_1.OrdersListComponent,
             product_filter_pipe_1.ProductFilterPipe,
+            orders_filter_pipe_1.OrdersFilterPipe,
             star_component_1.StarComponent
         ],
         bootstrap: [app_component_1.AppComponent]
