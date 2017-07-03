@@ -12,7 +12,7 @@ export class ProductListComponent{
 	pageTitle: string = 'Product list';
     imageWidth: number = 50;
     imageMargin: number = 2;
-    listFilter: string = 'cart';
+    listFilter: string;
     showImage: boolean = false;
 	products: IProduct[] = [
 	{

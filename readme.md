@@ -8,4 +8,4 @@
     It also starts the lite-server and launches the browser to run the application.
 
 
-Changes so far: Added filter for orders page based on item name
+Changes so far: Added size change for star ratings for Products.
