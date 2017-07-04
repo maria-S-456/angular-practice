@@ -44,7 +44,7 @@
                     <td>{{order.customerName}}</td>
                     <td>{{order.date}}</td>
                     <td>{{order.totalPrice|currency:'USD':'1.2-2'}}</td>
-                    <td><maria-star></maria-star></td>
+                    <td><maria-star [rating]='order.starRating'></maria-star></td>
                   </tr>
                </tbody>
            </table>
