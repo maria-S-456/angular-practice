@@ -8,4 +8,4 @@
     It also starts the lite-server and launches the browser to run the application.
 
 
-Changes so far: Added size change for star ratings for Orders now too.
+Changes so far: Made Products stars clickable with text.
