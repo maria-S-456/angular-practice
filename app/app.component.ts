@@ -1,4 +1,6 @@
 import {Component} from '@angular/core';
+import { ProductService } from './products/product.service';
+import { OrdersService } from './orders/orders.service';
 
 @Component({
 	selector: 'pm-app',
@@ -8,7 +10,8 @@ import {Component} from '@angular/core';
 		</div>
 		<pm-products></pm-products>
 		<pm-orders></pm-orders>
-	`
+	`,
+	providers: [ProductService, OrdersService]
 })
 
 export class AppComponent{
