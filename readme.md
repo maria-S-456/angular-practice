@@ -8,4 +8,4 @@
     It also starts the lite-server and launches the browser to run the application.
 
 
-Changes so far: Completed service for both Orders and Products
+Changes so far: Completed service for both Orders and Products using json data directly.

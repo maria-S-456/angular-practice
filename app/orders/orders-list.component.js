@@ -23,7 +23,8 @@ var OrdersListComponent = (function () {
         this.showImage = !this.showImage;
     };
     OrdersListComponent.prototype.ngOnInit = function () {
-        this.orders = this._ordersService.getOrders();
+        var _this = this;
+        this._ordersService.getOrders().subscribe(function (orders) { return _this.orders = orders; }, function (error) { return _this.errorMessage = error; });
     };
     OrdersListComponent.prototype.onRatingClicked = function (message) {
         this.pageTitle = 'Orders List:' + message;

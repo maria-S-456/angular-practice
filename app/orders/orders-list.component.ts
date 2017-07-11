@@ -15,6 +15,7 @@ export class OrdersListComponent implements OnInit{
     imageMargin: number = 2;
     listFilter: string;
     showImage: boolean = false;
+    errorMessage: string;
     orders: IOrders[];
     toggleImage(): void{
         this.showImage = !this.showImage;
@@ -23,7 +24,7 @@ export class OrdersListComponent implements OnInit{
     
     }
     ngOnInit(): void{
-        this.orders = this._ordersService.getOrders();
+        this._ordersService.getOrders().subscribe(orders=> this.orders=orders, error=> this.errorMessage = <any>error)
     }
     onRatingClicked(message:string): void{
         this.pageTitle = 'Orders List:' + message;
