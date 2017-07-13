@@ -13,6 +13,7 @@ import { ProductFilterPipe } from './products/product-filter.pipe';
 import { OrdersFilterPipe } from './orders/orders-filter.pipe';
 import { StarComponent } from './shared/star.component';
 import { ProductsDetailComponent } from './products/product-detail.component';
+import { OrdersDetailComponent } from './orders/orders-detail.component';
 import { WelcomeComponent } from './home/welcome.component';
 
 @NgModule({
@@ -23,6 +24,8 @@ import { WelcomeComponent } from './home/welcome.component';
     RouterModule.forRoot([
     {path:'products',component:ProductListComponent},
     {path:'product/:id',component:ProductsDetailComponent},
+    {path:'orders', component:OrdersListComponent},
+    {path:'orders/:id', component:OrdersDetailComponent},
     {path:'welcome',component:WelcomeComponent},
     {path:'',redirectTo:'welcome',pathMatch:'full'},
     {path:'**',redirectTo:'welcome',pathMatch:'full'}])
@@ -36,6 +39,7 @@ import { WelcomeComponent } from './home/welcome.component';
     OrdersFilterPipe,
     StarComponent,
     ProductsDetailComponent,
+    OrdersDetailComponent,
     WelcomeComponent
   ],
   bootstrap: [ AppComponent ]

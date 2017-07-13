@@ -8,4 +8,4 @@
     It also starts the lite-server and launches the browser to run the application.
 
 
-Changes so far: Completed adding router for products and navbar
+Changes so far: Completed adding router for products, orders, and navbar

@@ -18,7 +18,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'pm-app',
-        template: "\t\t\n\t\t<div> \n\t\t\t<nav class='navbar navbar-default'>\n\t\t\t\t<div class='container-fluid'>\n\t\t\t\t\t<a class='navbar-brand'>\n\t\t\t\t\t\t{{pageTitle}}\n\t\t\t\t\t</a>\n\t\t\t\t\t<ul class='nav navbar-nav'>\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a [routerLink]=\"['/welcome']\">Home</a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a [routerLink]=\"['/products']\">Product</a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</nav>\n\t\t\t<div class='container'>\n\t\t\t\t<router-outlet></router-outlet>\n\t\t\t</div>\n\t\t</div>\n\n\t\t\n\t",
+        template: "\t\t\n\t\t<div> \n\t\t\t<nav class='navbar navbar-default'>\n\t\t\t\t<div class='container-fluid'>\n\t\t\t\t\t<a class='navbar-brand'>\n\t\t\t\t\t\t{{pageTitle}}\n\t\t\t\t\t</a>\n\t\t\t\t\t<ul class='nav navbar-nav'>\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a [routerLink]=\"['/welcome']\">Home</a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a [routerLink]=\"['/products']\">Product</a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a [routerLink]=\"['/orders']\">Orders</a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</nav>\n\t\t\t<div class='container'>\n\t\t\t\t<router-outlet></router-outlet>\n\t\t\t\t\n\t\t\t</div>\n\t\t</div>\n\n\t\t\n\t",
         providers: [product_service_1.ProductService, orders_service_1.OrdersService]
     })
 ], AppComponent);

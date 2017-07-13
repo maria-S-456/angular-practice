@@ -18,11 +18,15 @@ import { OrdersService } from './orders/orders.service';
 						<li>
 							<a [routerLink]="['/products']">Product</a>
 						</li>
+						<li>
+							<a [routerLink]="['/orders']">Orders</a>
+						</li>
 					</ul>
 				</div>
 			</nav>
 			<div class='container'>
 				<router-outlet></router-outlet>
+				
 			</div>
 		</div>
 

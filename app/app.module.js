@@ -19,6 +19,7 @@ var product_filter_pipe_1 = require("./products/product-filter.pipe");
 var orders_filter_pipe_1 = require("./orders/orders-filter.pipe");
 var star_component_1 = require("./shared/star.component");
 var product_detail_component_1 = require("./products/product-detail.component");
+var orders_detail_component_1 = require("./orders/orders-detail.component");
 var welcome_component_1 = require("./home/welcome.component");
 var AppModule = (function () {
     function AppModule() {
@@ -34,6 +35,8 @@ AppModule = __decorate([
             router_1.RouterModule.forRoot([
                 { path: 'products', component: product_list_component_1.ProductListComponent },
                 { path: 'product/:id', component: product_detail_component_1.ProductsDetailComponent },
+                { path: 'orders', component: orders_list_component_1.OrdersListComponent },
+                { path: 'orders/:id', component: orders_detail_component_1.OrdersDetailComponent },
                 { path: 'welcome', component: welcome_component_1.WelcomeComponent },
                 { path: '', redirectTo: 'welcome', pathMatch: 'full' },
                 { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
@@ -48,6 +51,7 @@ AppModule = __decorate([
             orders_filter_pipe_1.OrdersFilterPipe,
             star_component_1.StarComponent,
             product_detail_component_1.ProductsDetailComponent,
+            orders_detail_component_1.OrdersDetailComponent,
             welcome_component_1.WelcomeComponent
         ],
         bootstrap: [app_component_1.AppComponent]
